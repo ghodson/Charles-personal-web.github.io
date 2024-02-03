@@ -1,0 +1,334 @@
+/* APPLIES TO ALL ELEMENTS */
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --BG: #53260f;
+  --TEXT: #f0f2ef;
+  --INNER-BG: #07071b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* END OF GENERIC STYLING */
+/* STYLING  FOR ELEMENTS */
+body {
+  background-image: radial-gradient(var(--BG), var(--INNER-BG));
+  background-color: var(--BG);
+  font: 'Nunito', sans-serif;
+  color: var(--TEXT);
+  min-height: 100vh;
+  min-width: 100%;
+  overflow-x: hidden;
+  flex-grow: 1;
+}
+
+header {
+  height: auto;
+  min-width: 100vw;
+  /* background-color: green; */
+  color: var(--TEXT);
+  position: sticky;
+  top: 0;
+  background-image: radial-gradient(var(--BG), var(--INNER-BG));
+}
+
+nav {
+  /* background-color: green; */
+  width: 100vw;
+  height: auto;
+}
+
+nav ul {
+  min-width: 100%;
+  height: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2);
+  grid-gap: 0.1rem;
+  padding: 0.1rem;
+  margin-top: 1rem;
+}
+
+nav li {
+  width: 100%;
+  /* background-color: yellow; */
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li a {
+  width: 100%;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+  color: var(--TEXT);
+  border-radius: 1rem;
+  border-style: solid;
+  border-color: var(--TEXT);
+  padding: 0.3rem;
+  /* background-color: blue; */
+}
+/* END OF ELEMENTS STYLING */
+/* CLASS STYLING */
+
+.link-style {
+  /* font-size: large; */
+  font-weight: bold;
+  color: var(--TEXT);
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: var(--TEXT);
+  padding: 0.3rem;
+  /* margin-left: 0.4rem; */
+  box-shadow: 0 0 10px 5px black;
+  /* word-break: break-all; */
+  text-wrap: nowrap;
+  margin-top: 0.5rem;
+  /* box-shadow: inset; */
+  /* background-color: rgb(9, 9, 38); */
+}
+
+.fig-caption {
+  padding: 1rem;
+  margin: auto;
+}
+
+.section-name-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem;
+}
+
+.article-intro-style {
+  text-align: left;
+  padding: 1rem;
+}
+
+.line {
+  width: 4rem;
+  background-color: rgb(244, 244, 69);
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.photo-and-content-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  /* background-color: blue; */
+}
+
+.hero-content {
+  min-height: fit-content;
+  width: fit-content;
+}
+
+.photo-content {
+  height: 40%;
+  width: 100vw;
+  background-color: transparent;
+}
+
+.about-style {
+  padding: 1rem;
+  width: 70%;
+  scroll-margin-top: 15rem;
+}
+
+.about-style * {
+  text-align: left;
+  /* background-color: yellow; */
+  margin-right: auto;
+}
+
+.skill-style,
+.service-style {
+  padding: 1rem;
+  width: auto;
+  scroll-margin-top: 15rem;
+  /* background-color: blue; */
+  border-radius: 0 20px 20px 0;
+  background-image: radial-gradient(var(--BG), var(--INNER-BG));
+}
+
+.service-style {
+  margin-top: 1rem;
+}
+
+.service-style ul li,
+.skill-style ul li {
+  list-style-type: circle;
+  font-size: large;
+  font-weight: bold;
+  word-spacing: 0.3rem;
+}
+
+.skill-style * {
+  text-align: left;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.service-style {
+  padding: 1rem;
+
+  width: 90%;
+  scroll-margin-top: 15rem;
+}
+
+.service-style:hover {
+  box-shadow: 10 10 10 black;
+  border-radius: 2rem;
+  transition: all 0.4s;
+}
+
+.skill-style:hover {
+  box-shadow: 10 10 10 black;
+  border-radius: 2rem;
+  transition: all 0.4s;
+}
+
+.service-style * {
+  text-align: left;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+/* .service-style * {
+  text-align: left;
+} */
+
+.contact-style {
+  text-align: left;
+  padding: 1rem;
+  min-width: 100%;
+  scroll-margin-top: 2rem;
+}
+
+.contact-style ul li {
+  text-align: left;
+  list-style-type: none;
+  /* width: 50%;
+  margin: auto; */
+}
+
+.svg-container {
+  height: fit-content;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+/* UTILITY CLASS STYLES STARTS style="text-align: left; margin-right: auto */
+.center-content-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-content-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* UTILITY STYLES ENDS */
+/* 
+.twitter-container {
+  height: 2;
+  width: 20px;
+} */
+
+.flexer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  padding: 1rem;
+}
+
+/* END OF CLASS STYLING */
+
+/* MEDIA QUERY STARTS */
+
+@media screen and (min-width: 764px) {
+  nav {
+    min-width: 100%;
+    height: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(1);
+    grid-gap: 0.1rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+  }
+
+  nav ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .article-intro-style p {
+    margin-left: 4rem;
+    /* background-color: yellow; */
+  }
+
+  .line {
+    margin-left: 6rem;
+  }
+
+  .photo-and-content-style {
+    flex-direction: row;
+    width: 70%;
+    margin: 2rem;
+    background-image: radial-gradient(var(--INNER-BG), var(--BG));
+
+    padding: 1rem;
+  }
+
+  .article-intro-style {
+    text-align: center;
+    margin-left: 1rem;
+  }
+
+  .contact-style {
+    text-align: center;
+  }
+
+  .about-style {
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-style * {
+    text-align: center;
+    width: 45%;
+    margin: auto;
+  }
+
+  .skill-style,
+  .service-style {
+    width: 50%;
+  }
+
+  .flexer {
+    width: 70%;
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+/* MEDIA QUERY ENDS */
